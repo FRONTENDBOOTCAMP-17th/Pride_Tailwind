@@ -1,0 +1,65 @@
+/* ===== base grid ===== */
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 36px;
+  row-gap: 36px;
+}
+
+/* ===== full width sections ===== */
+header,
+footer,
+main,
+section,
+.qna {
+  grid-column: 1 / -1;
+}
+
+/* ===== inner container (실제 콘텐츠 폭) ===== */
+.container {
+  grid-column: 2 / span 10;
+}
+
+/* ===============================
+   📱 Mobile (≤599px)
+================================ */
+@media (max-width: 599px) {
+  body {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .container {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ===============================
+   📱 Tablet (600–1135px)
+================================ */
+@media (min-width: 600px) and (max-width: 1135px) {
+  body {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 36px;
+    row-gap: 36px;
+  }
+
+  .container {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ===============================
+   🖥 Desktop (≥1136px)
+================================ */
+@media (min-width: 1136px) {
+  body {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .container {
+    grid-column: 2 / span 10;
+  }
+}

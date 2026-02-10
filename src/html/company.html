@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber</title>
+
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <header class="flex w-full m-0 sticky top-0 h-14 justify-start items-center px-6 bg-black">
+      <h1>
+        <div class="Uber-logos flex items-center justify-center">
+          <a href="/" aria-label="Uber-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+              <path d="M31.7203 13.6218H26.52V29.4667H31.7203V13.6218Z" fill="url(#paint0_linear_14130_1466)" />
+              <path d="M39 9.02222H19.2402V13.6227H39V9.02222Z" fill="url(#paint1_linear_14130_1466)" />
+              <path d="M14.04 9.02222V25.3773H5.20026V9.02222H0V21.2893C0 26.8343 4.04976 29.9785 9.61974 29.9785C15.1897 29.9785 19.2395 26.8343 19.2395 21.2893V9.02222H14.04Z" fill="white" />
+              <defs>
+                <linearGradient id="paint0_linear_14130_1466" x1="29.12" y1="29.5819" x2="29.12" y2="13.9964" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#EF5394" />
+                  <stop offset="0.65" stop-color="#8B52A0" />
+                  <stop offset="1" stop-color="#5D4EA1" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_14130_1466" x1="19.3658" y1="11.322" x2="38.9941" y2="11.322" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#65C081" />
+                  <stop offset="0.0637" stop-color="#62B68B" />
+                  <stop offset="0.2224" stop-color="#5AA49E" />
+                  <stop offset="0.3821" stop-color="#5495AB" />
+                  <stop offset="0.5406" stop-color="#5089B3" />
+                  <stop offset="0.6972" stop-color="#4D80B8" />
+                  <stop offset="0.8513" stop-color="#4B7BBB" />
+                  <stop offset="1" stop-color="#497ABD" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </h1>
+      <nav class="Uber-nav text-white ml-3 hidden lg:block">
+        <ul class="flex content-evenly flex-row text-white gap-8 justify-center items-center ml-10">
+          <li class="h-12 flex items-center">
+            기업정보
+            <span class="narrow inline-flex justify-center items-center hover:scale-125 transition-transform duration-300"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 9L12 15L6 9" stroke="white" stroke-width="2" /></svg
+            ></span>
+          </li>
+          <li>안전</li>
+          <li>고객지원</li>
+          <li>차량 서비스</li>
+          <li class="h-12 flex items-center">
+            기사지원
+            <span class="narrow inline-flex justify-center items-center hover:scale-125 transition-transform duration-300"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 9L12 15L6 9" stroke="white" stroke-width="2" /></svg
+            ></span>
+          </li>
+        </ul>
+      </nav>
+      <div class="Uber-buttons flex items-center justify-center ml-auto">
+        <a href="/" class="Uber-login flex w-[130px] h-10 py-2 px-3 rounded-[22px] border-2 border-white bg-white text-black justify-center items-center text-base font-semibold leading-normal no-underline absolute right-17">가입하기</a>
+        <a href="/" class="Uber-more flex w-10 h-[30px] items-center bg-black justify-end ml-auto absolute right-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black">
+            <path d="M18 10L6 10" stroke="white" stroke-width="2" stroke-linecap="round" />
+            <path d="M18 14L6 14" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <main class="Hero bg-[url('/public/images/Uber.svg')] bg-right bg-contain bg-no-repeat min-h-[256px] sm:min-h-[359px] sm:bg-no-repeat sm:bg-right sm:bg-contain sm:bg-[url('/public/images/middle.svg')] lg:min-h-[500px] lg:bg-no-repeat lg:bg-right lg:bg-contain lg:bg-[url('/public/images/Ubertaxi-max.svg')]">
+      <div class="Hero-content w-max h-max gap-[28px] py-10 px-6 flex flex-col justify-center items-start">
+        <h2 class="text-2xl font-bold">우리들의 택시, UT</h2>
+        <h3 class="text-[16px]">UT로 안전하고 편안한 차량 서비스를 이용하세요.</h3>
+        <a href="/" class="Hero-download flex w-[160px] py-4 px-6 border-2 border-current bg-black text-white justify-center content-center no-underline"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11.5859L7.70703 8.29297L6.29297 9.70703L12 15.4141L17.707 9.70703L16.293 8.29297L13 11.5859V4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6C4 4.89543 4.89543 4 6 4H11L11 11.5859Z" fill="white" />
+          </svg>
+          앱 다운로드</a
+        >
+      </div>
+    </main>
+    <section class="Uber-info flex flex-col ml-auto py-10 px-6 justify-evenly gap-9 sm:flex-row sm:gap-6">
+      <article class="Uber-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 21V13M12 21L5.83752 16.5982C5.42695 16.305 5.22166 16.1583 5.11083 15.943C5 15.7276 5 15.4753 5 14.9708V8M12 21L18.1625 16.5982C18.573 16.305 18.7783 16.1583 18.8892 15.943C19 15.7276 19 15.4753 19 14.9708V8M12 13L5 8M12 13L19 8M5 8L10.8375 3.83034C11.3989 3.42938 11.6795 3.2289 12 3.2289C12.3205 3.2289 12.6011 3.42938 13.1625 3.83034L19 8" stroke="black" stroke-width="2" stroke-linejoin="round" />
+        </svg>
+        <h3 class="text-[20px]">회사 소개</h3>
+        <p>UT의 회사 연혁과 핵심 가치 및 UT가 창출하는 다양한 기회에 대해 알아보세요.</p>
+        <span class="Uber-detail"> 자세히 보기</span>
+      </article>
+      <article class="Uber-card">
+        <img src="/public/images/Paper.svg" alt="icon" />
+        <h3 class="text-[20px]">뉴스룸</h3>
+        <p>UT의 회사 연혁과 핵심 가치 및 UT가 창출하는 다양한 기회에 대해 알아보세요.</p>
+        <span class="Uber-detail"> 자세히 보기</span>
+      </article>
+    </section>
+  </body>
+</html>
