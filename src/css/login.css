@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Pretendard Variable';
+}
+
+@keyframes slideInLoop {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(-4px);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+.login-maincontainer {
+  display: flex;
+  flex-flow: nowrap column;
+  block-size: calc(100vh - 100px);
+
+  justify-content: center;
+  align-items: center;
+
+  .login-Logo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .login-title {
+      display: inline-flex;
+      overflow: hidden;
+    }
+
+    .login-title span {
+      display: inline-block;
+      transform: translateX(40px);
+      opacity: 0;
+      animation: slideInLoop 4s forwards infinite;
+    }
+    .login-title span:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .login-title span:nth-child(2) {
+      animation-delay: 0.05s;
+    }
+    .login-title span:nth-child(3) {
+      animation-delay: 0.1s;
+    }
+    .login-title span:nth-child(4) {
+      animation-delay: 0.15s;
+    }
+    .login-title span:nth-child(5) {
+      animation-delay: 0.2s;
+    }
+    .login-title span:nth-child(6) {
+      animation-delay: 0.25s;
+    }
+    .login-title span:nth-child(7) {
+      animation-delay: 0.3s;
+    }
+    .login-title span:nth-child(8) {
+      animation-delay: 0.35s;
+    }
+  }
+
+  .login-login {
+    display: flex;
+    flex-flow: column;
+
+    gap: 40px;
+
+    justify-content: center;
+    align-items: center;
+    .login-input {
+      display: flex;
+      flex-flow: nowrap column;
+      gap: 20px;
+      h1 {
+        font-size: 24px;
+        font-style: bold;
+      }
+      form {
+        input {
+          font-size: 18px;
+          inline-size: 300px;
+          aspect-ratio: 5/1;
+          padding-inline-start: 20px;
+          background: #f5f5f5;
+          border: 1px solid #898989;
+        }
+      }
+    }
+    .login-button {
+      margin: 0;
+      padding: 0;
+
+      font-size: 20px;
+      font-weight: 700;
+
+      inline-size: 200px;
+      aspect-ratio: 4/1;
+      background: #000;
+      color: #fff;
+    }
+  }
+
+  @media (width >= 600px) {
+  }
+  @media (width >= 1136px) {
+    flex-flow: nowrap row;
+    justify-content: space-around;
+
+    .login-Logo {
+      block-size: 50%;
+
+      background-image: url(/public/image/UberTaxi.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: centconer;
+      transform: scaleX(-1);
+    }
+
+    .login-Logo > * {
+      transform: scaleX(-1);
+    }
+
+    .login-Logo,
+    .login-login {
+      flex: 1;
+      inline-size: 50%;
+    }
+  }
+}

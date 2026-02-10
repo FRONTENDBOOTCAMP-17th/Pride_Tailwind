@@ -1,0 +1,139 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* App Download Section*/
+
+.download-section {
+  background: var(--color-tertiary);
+  width: 100%;
+}
+
+.download-section .download-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-36);
+  width: 100%;
+
+  /* Mobile (320–599) */
+  padding: var(--spacing-40) var(--spacing-16);
+}
+
+/* Tablet (600–1135) */
+@media (width >= 600px) {
+  .download-section .download-inner {
+    padding: var(--spacing-40) var(--spacing-36);
+  }
+}
+
+/* Desktop (1136+) */
+@media (width >= 1136px) {
+  .download-section .download-inner {
+    margin-inline: auto;
+    padding: var(--spacing-64);
+  }
+}
+
+.download-title {
+  margin: 0;
+  color: var(--content-primary);
+
+  font-family: Pretendard;
+  font-size: 1.333rem; /* 21.328px */
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.download-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-36);
+
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Desktop */
+@media (width >= 1136px) {
+  .download-list {
+    flex-direction: row;
+  }
+}
+
+.download-item {
+  width: 100%;
+}
+
+/* Desktop */
+@media (width >= 1136px) {
+  .download-item {
+    flex: 1;
+  }
+}
+
+.download-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: var(--spacing-16) var(--spacing-24);
+
+  background: var(--color-secondary);
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Desktop */
+@media (width >= 1136px) {
+  .download-card {
+    height: 200px;
+  }
+}
+
+.download-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-36);
+
+  margin: 0;
+  min-width: 0;
+}
+
+.download-logo {
+  inline-size: 104px;
+  block-size: 104px;
+  flex-shrink: 0;
+}
+
+.download-text {
+  color: var(--content-primary);
+
+  font-family: Pretendard;
+  font-size: 21.328px;
+  font-weight: 600;
+  line-height: 150%;
+
+  min-width: 0;
+}
+
+.download-arrow {
+  inline-size: 56px;
+  block-size: 56px;
+  flex-shrink: 0;
+
+  background-image: url('/images/Arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px 28px;
+}

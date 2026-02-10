@@ -1,0 +1,190 @@
+* {
+  font-family: Pretendard;
+}
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+header {
+  display: flex;
+  inline-size: 100%;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  block-size: 64px;
+  align-items: center;
+
+  background: var(--color-primary);
+  justify-content: space-between;
+  padding: 0 24px;
+
+  .Uber-logos {
+    inline-size: 39px;
+    block-size: 39px;
+
+    display: flex;
+    svg {
+      display: block;
+    }
+  }
+
+  .Uber-login {
+    display: flex;
+    inline-size: 130px;
+    block-size: 40px;
+    padding: 8px 12px;
+    border-radius: 22px;
+    border: 2px solid currentColor;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration: none;
+    margin: 0;
+  }
+  .Uber-more {
+    display: flex;
+    inline-size: 40px;
+    block-size: 30px;
+    align-items: center;
+    padding: 0;
+    background: var(--color-primary);
+  }
+  .Uber-buttons {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    align-content: flex-end;
+    gap: 12px;
+  }
+}
+
+.Hero {
+  background: url(/public/image/Uber.svg) right / contain no-repeat;
+  background-size: 100%;
+  background-size: auto;
+
+  min-block-size: 256px;
+
+  .Hero-download {
+    display: flex;
+    inline-size: 160px;
+    padding: 16px 24px;
+    border: 2px solid currentColor;
+    background: var(--color-primary);
+    align-content: center;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--color-secondary);
+  }
+  .Hero-content {
+    inline-size: max-content;
+    block-size: max-content;
+    gap: 28px;
+    padding: 40px 24px;
+  }
+}
+
+.Uber-info {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  gap: 36px;
+
+  svg {
+    inline-size: 24px;
+    block-size: 24px;
+  }
+  .Uber-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    p {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 22px;
+    }
+    span {
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}
+
+@media (width >= 600px) {
+  .Uber-info {
+    display: flex;
+    padding: 56px 32px;
+    flex-direction: row;
+  }
+  .Hero {
+    background: url(../../public/image/middle.svg) right / contain no-repeat;
+    background-size: auto;
+    min-block-size: 359px;
+  }
+}
+@media (width >= 1136px) {
+  .Hero {
+    .Uber-info {
+      display: flex;
+      padding: 56px 32px;
+      flex-direction: row;
+
+      width: 1160px;
+      padding: 64px;
+
+      align-items: flex-start;
+    }
+    .Hero {
+      background: url(../../public/image/UberTaxi-max.svg) right/ contain no-repeat;
+
+      background-size: auto;
+      min-block-size: 400px;
+    }
+    .Uber-nav {
+      display: flex;
+      color: white;
+      font-size: 16px;
+    }
+    .Uber-more {
+      display: none;
+    }
+  }
+}
+
+.Uber-nav {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+
+  ul {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 4px 8px;
+    }
+  }
+  .narrow {
+    display: inline-flex;
+    align-items: center;
+    svg {
+      display: block;
+    }
+  }
+}
