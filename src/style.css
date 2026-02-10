@@ -2,7 +2,7 @@
 @import 'tailwindcss';
 
 @theme {
-    --font-sans: 'Pretendard Variable', sans-serif;
+  --font-sans: 'Pretendard Variable', sans-serif;
 }
 
 :root {
@@ -40,7 +40,7 @@
   /* Border Colors */
   --border-opaque: var(--color-gray-400);
   --border-transparent: rgba(189, 189, 189, 0.3);
-  
+
   /* Status Transparent */
   --border-transparent2: rgba(137, 137, 137, 0.3);
   --positive-transparent: rgba(10, 138, 67, 0.1);
@@ -57,4 +57,51 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+@layer components {
+  .input-base {
+    @apply bg-[var(--color-tertiary)]
+    border
+    border-[var(--border-transparent2)]
+    text-[16px]
+    font-normal
+    leading-[160%]
+    w-full
+    h-[50px]
+    box-border
+    px-[var(--spacing-12)];
+  }
+
+  /* 이메일 성공 상태 */
+  input[type='email']:focus:not(:placeholder-shown),
+  input[type='email']:valid:not(:placeholder-shown) {
+    @apply bg-[var(--positive-transparent)]
+    border-2
+    border-[var(--color-positive)]
+    outline-none;
+  }
+
+  /* 비밀번호 에러 상태 */
+  input[type='password']:focus:not(:placeholder-shown),
+  input[type='password']:invalid:not(:placeholder-shown) {
+    @apply bg-[var(--negative-transparent)]
+    border-2
+    border-[var(--color-negative)]
+    outline-none;
+  }
+
+  /* 아이콘 표시 조건 */
+  input[type='password']:invalid:not(:placeholder-shown) + .signup-pwd-icon {
+    @apply block;
+  }
+
+  .error-message {
+    @apply hidden text-[12px] text-[var(--color-negative)] mt-1;
+  }
+
+  /* 에러 메시지 표시 */
+  input.signup-pwd:not(:placeholder-shown):invalid ~ .error-message {
+    @apply block;
+  }
 }
