@@ -62,33 +62,33 @@
 /* sign up 파트 */
 @layer components {
   .input-base {
-    @apply bg-[var(--color-tertiary)]
+    @apply bg-(--color-tertiary)
     border
-    border-[var(--border-transparent2)]
+    border-(--border-transparent2)
     text-[16px]
     font-normal
     leading-[160%]
     w-full
     h-[50px]
     box-border
-    px-[var(--spacing-12)];
+    px-12px;
   }
 
   /* 이메일 성공 상태 */
   input[type='email']:focus:not(:placeholder-shown),
   input[type='email']:valid:not(:placeholder-shown) {
-    @apply bg-[var(--positive-transparent)]
+    @apply bg-(--positive-transparent)
     border-2
-    border-[var(--color-positive)]
+    border-(--color-positive)
     outline-none;
   }
 
   /* 비밀번호 에러 상태 */
   input[type='password']:focus:not(:placeholder-shown),
   input[type='password']:invalid:not(:placeholder-shown) {
-    @apply bg-[var(--negative-transparent)]
+    @apply bg-(--negative-transparent)
     border-2
-    border-[var(--color-negative)]
+    border-(--color-negative)
     outline-none;
   }
 
@@ -98,7 +98,7 @@
   }
 
   .error-message {
-    @apply hidden text-[12px] text-[var(--color-negative)] mt-1;
+    @apply hidden text-[12px] text-(--color-negative) mt-1;
   }
 
   /* 에러 메시지 표시 */
