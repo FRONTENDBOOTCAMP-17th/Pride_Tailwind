@@ -59,6 +59,7 @@
   border-width: 0;
 }
 
+/* sign up 파트 */
 @layer components {
   .input-base {
     @apply bg-[var(--color-tertiary)]
