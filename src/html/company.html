@@ -37,11 +37,11 @@
           </a>
         </div>
       </h1>
-      <nav class="Uber-nav hidden">
-        <ul>
-          <li>
+      <nav class="Uber-nav text-white ml-3 hidden lg:block">
+        <ul class="flex content-evenly flex-row text-white gap-8 justify-center items-center ml-10">
+          <li class="h-12 flex items-center">
             기업정보
-            <span class="narrow"
+            <span class="narrow inline-flex justify-center items-center hover:scale-125 transition-transform duration-300"
               ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M18 9L12 15L6 9" stroke="white" stroke-width="2" /></svg
             ></span>
@@ -49,13 +49,12 @@
           <li>안전</li>
           <li>고객지원</li>
           <li>차량 서비스</li>
-          <li>
+          <li class="h-12 flex items-center">
             기사지원
-            <span class="narrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M18 9L12 15L6 9" stroke="white" stroke-width="2" />
-              </svg>
-            </span>
+            <span class="narrow inline-flex justify-center items-center hover:scale-125 transition-transform duration-300"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 9L12 15L6 9" stroke="white" stroke-width="2" /></svg
+            ></span>
           </li>
         </ul>
       </nav>
@@ -69,7 +68,7 @@
         </a>
       </div>
     </header>
-    <main class="Hero bg-[url('/public/images/Uber.svg')] bg-right bg-contain bg-no-repeat min-h-[256px] sm:min-h-[359px] sm:bg-no-repeat sm:bg-right sm:bg-contain sm:bg-[url('/public/images/middle.svg')]">
+    <main class="Hero bg-[url('/public/images/Uber.svg')] bg-right bg-contain bg-no-repeat min-h-[256px] sm:min-h-[359px] sm:bg-no-repeat sm:bg-right sm:bg-contain sm:bg-[url('/public/images/middle.svg')] lg:min-h-[500px] lg:bg-no-repeat lg:bg-right lg:bg-contain lg:bg-[url('/public/images/Ubertaxi-max.svg')]">
       <div class="Hero-content w-max h-max gap-[28px] py-10 px-6 flex flex-col justify-center items-start">
         <h2 class="text-2xl font-bold">우리들의 택시, UT</h2>
         <h3 class="text-[16px]">UT로 안전하고 편안한 차량 서비스를 이용하세요.</h3>
@@ -81,18 +80,18 @@
         >
       </div>
     </main>
-    <section class="Uber-info">
+    <section class="Uber-info flex flex-col ml-auto py-10 px-6 justify-evenly gap-9 sm:flex-row sm:gap-6">
       <article class="Uber-card">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M12 21V13M12 21L5.83752 16.5982C5.42695 16.305 5.22166 16.1583 5.11083 15.943C5 15.7276 5 15.4753 5 14.9708V8M12 21L18.1625 16.5982C18.573 16.305 18.7783 16.1583 18.8892 15.943C19 15.7276 19 15.4753 19 14.9708V8M12 13L5 8M12 13L19 8M5 8L10.8375 3.83034C11.3989 3.42938 11.6795 3.2289 12 3.2289C12.3205 3.2289 12.6011 3.42938 13.1625 3.83034L19 8" stroke="black" stroke-width="2" stroke-linejoin="round" />
         </svg>
-        <h3>회사 소개</h3>
+        <h3 class="text-[20px]">회사 소개</h3>
         <p>UT의 회사 연혁과 핵심 가치 및 UT가 창출하는 다양한 기회에 대해 알아보세요.</p>
         <span class="Uber-detail"> 자세히 보기</span>
       </article>
       <article class="Uber-card">
         <img src="/public/images/Paper.svg" alt="icon" />
-        <h3>뉴스룸</h3>
+        <h3 class="text-[20px]">뉴스룸</h3>
         <p>UT의 회사 연혁과 핵심 가치 및 UT가 창출하는 다양한 기회에 대해 알아보세요.</p>
         <span class="Uber-detail"> 자세히 보기</span>
       </article>

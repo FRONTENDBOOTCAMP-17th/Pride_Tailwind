@@ -1,1 +1,8 @@
 @import 'tailwindcss';
+
+.Uber-card {
+  @apply flex flex-col items-start gap-3 self-stretch;
+}
+.Uber-detail {
+  @apply border-b border-current;
+}
