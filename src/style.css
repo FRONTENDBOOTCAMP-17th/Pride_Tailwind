@@ -1,2 +1,60 @@
 /* CSS 스타일을 작성해 주세요. */
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Pretendard Variable', sans-serif;
+}
+
+:root {
+  /* color */
+  --color-white: #fff;
+  --color-gray-100: #f5f5f5;
+  --color-gray-300: #898989;
+  --color-gray-500: #6b6b6b;
+  --color-black: #000;
+  --color-green-500: #048848;
+  --color-yellow-500: #ffc043;
+  --color-red-500: #e11900;
+  --color-blue-500: #276ef1;
+
+  /* Foundation Semantic */
+  --color-primary: var(--color-black);
+  --color-secondary: var(--color-white);
+  --color-tertiary: var(--color-gray-100);
+
+  --color-accent: var(--color-blue-500);
+
+  --color-negative: var(--color-red-500);
+  --color-warning: var(--color-yellow-500);
+  --color-positive: var(--color-green-500);
+
+  /* Content Colors */
+  --content-primary: var(--color-black);
+  --content-secondary: var(--color-gray-500);
+  --content-tertiary: var(--color-gray-300);
+  --content-contentSecondary: var(--color-black);
+
+  --content-inverse-primary: var(--color-white);
+  --content-inverse-secondary: var(--color-gray-300);
+
+  /* Border Colors */
+  --border-opaque: var(--color-gray-400);
+  --border-transparent: rgba(189, 189, 189, 0.3);
+
+  /* Status Transparent */
+  --border-transparent2: rgba(137, 137, 137, 0.3);
+  --positive-transparent: rgba(10, 138, 67, 0.1);
+  --negative-transparent: rgba(225, 25, 0, 0.1);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

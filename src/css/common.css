@@ -22,7 +22,7 @@
   --color-positive: var(--color-green-500);
 
   /* Content Colors */
-  --content-primary: var(--color-gray-500);
+  --content-primary: var(--color-black);
   --content-secondary: var(--color-gray-500);
   --content-tertiary: var(--color-gray-300);
   --content-contentSecondary: var(--color-black);
